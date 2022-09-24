@@ -1,8 +1,6 @@
 #ifndef MAIN_HPP
 #define MAIN_HPP
 
-#include "renderer.hpp"
-
 const unsigned int width = 800;
 const unsigned int height = 800;
 const unsigned int target_fps = 60;
