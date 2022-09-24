@@ -1,3 +1,0 @@
-C:/Users/Daniel/Desktop/Tetris/build/CMakeFiles/build.dir
-C:/Users/Daniel/Desktop/Tetris/build/CMakeFiles/edit_cache.dir
-C:/Users/Daniel/Desktop/Tetris/build/CMakeFiles/rebuild_cache.dir
