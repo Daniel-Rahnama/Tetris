@@ -1,23 +1,21 @@
 #include "renderer.hpp"
 
-#include "exception.hpp"
-
 Renderer::Renderer(size_t width, size_t height) : screen_width(width), screen_height(height) {
     
     if(SDL_Init(SDL_INIT_VIDEO) < 0) {
-        throw SDL_Init_Fail;
+        throw "Unable to initialise SDL";
     }
 
     window = SDL_CreateWindow("Tetris", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, screen_width, screen_height, SDL_WINDOW_SHOWN);
 
     if (!window) {
-        throw SDL_Window_Fail;
+        throw "Unable to create SDL Window";
     }
 
     renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 
     if (!renderer) {
-        throw SDL_Renderer_Fail;
+        throw "Unable to create SDL Renderer";
     }
 
 }
